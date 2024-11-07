@@ -10,7 +10,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("https://tasks-front-two.vercel.app/")  // substitua com o URL do seu front-end
+                .allowedOrigins("https://tasks-front-two.vercel.app")  // substitua com o URL do seu front-end
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
     }
 }
